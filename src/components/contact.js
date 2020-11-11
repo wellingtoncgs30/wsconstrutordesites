@@ -78,7 +78,7 @@ export default function Contact() {
                 "Content-Type": "application/x-www-form-urlencoded"
             },
             body: encode({
-                "form-name": form.getAttribute("name"),
+                "form-name": "contact",
                 ...form
             })
         })
