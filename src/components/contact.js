@@ -1,12 +1,15 @@
-import React/*, { useState }*/ from "react"
+import React, { useState } from "react"
 //import axios from "axios"
+import { navigate } from "gatsby"
 import { Container, Row, Col, Form, FormGroup, Button/*, Modal*/ } from "react-bootstrap"
 import { FaPhoneAlt } from "react-icons/fa"
 import { ImWhatsapp } from "react-icons/im"
 import Input from "./input"
 
 export default function Contact() {
-    /*const [form, setForm] = useState({
+    /*
+    TRECHO DO CÓDIGO PARA ENVIO DE FORMULÁRIO LOCAL
+    const [form, setForm] = useState({
         name: "",
         telephone: "",
         email: "",
@@ -51,6 +54,37 @@ export default function Contact() {
             message: ""
         })
     }*/
+    //FUNCIONAMENTO EM SITE HOSPEDADO NO NETLIFY
+    const [form, setForm] = useState({
+        name: "",
+        telephone: "",
+        email: "",
+        subject: "",
+        message: ""
+    })
+    function handleInputChange(event) {
+        const {name, value} = event.target
+        setForm(values => ({...values, [name]: value}))
+    }
+    function encode(data) {
+        return Object.keys(data).map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&")
+    }
+    function submitForm(event) {
+        event.preventDefault()
+        const formContact = event.target
+        fetch("/", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: encode({
+                "form-name": form.getAttribute("name"),
+                ...form
+            })
+        })
+        .then(() => navigate(formContact.getAttribute("action")))
+        .catch((error) => console.log(`Erro: ${error}`))
+    }
     return(
         <section id="#contact">
             <h1 className="text-center">Entre em contato</h1>
@@ -70,21 +104,22 @@ export default function Contact() {
                         </address>
                     </Col>
                     <Col sm={12} md={6}>
-                        <Form /*{onSubmit={submitForm}}*/ method="POST" name="contact" data-netlify="true">
+                        <Form onSubmit={submitForm} method="POST" name="contact" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact"></input>
                             <FormGroup>
-                                <Form.Control name="name" placeholder="Nome:" /*value={form.name} onChange={handleInputChange}*/ required></Form.Control>
+                                <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
                             </FormGroup> 
                             <FormGroup>
                                 <Input></Input>
                             </FormGroup>                   
                             <FormGroup>
-                                <Form.Control name="email" placeholder="E-mail:" /*value={form.email} onChange={handleInputChange}*/ required></Form.Control>
+                                <Form.Control name="email" placeholder="E-mail:" value={form.email} onChange={handleInputChange} required></Form.Control>
                             </FormGroup>
                             <FormGroup>
-                                <Form.Control name="subject" placeholder="Assunto:" /*value={form.subject} onChange={handleInputChange}*/ required></Form.Control>
+                                <Form.Control name="subject" placeholder="Assunto:" value={form.subject} onChange={handleInputChange} required></Form.Control>
                             </FormGroup>
                             <FormGroup>
-                                <Form.Control as="textarea" name="message" placeholder="Mensagem:" /*value={form.message} onChange={handleInputChange}*/ required></Form.Control>
+                                <Form.Control as="textarea" name="message" placeholder="Mensagem:" value={form.message} onChange={handleInputChange} required></Form.Control>
                             </FormGroup>
                             <FormGroup className="text-center">
                                 <Button variant="outline-success" type="submit">Enviar</Button>
