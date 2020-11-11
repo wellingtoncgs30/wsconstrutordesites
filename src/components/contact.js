@@ -142,7 +142,7 @@ export default function Contact() {
                                 <Form.Control as="textarea" name="message" placeholder="Mensagem:" value={form.message} onChange={handleInputChange} required></Form.Control>
                             </FormGroup>
                             <FormGroup className="text-center">
-                                <Button variant="outline-success" type="submit" onClick={resetForm}>Enviar</Button>
+                                <Button variant="outline-success" type="submit">Enviar</Button>
                                 <Modal show={show} onHide={closeModal} backdrop="static" keyboard={false} centered>
                                     <Modal.Header closeButton>
                                         <Modal.Title>Informação</Modal.Title>
