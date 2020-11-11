@@ -70,7 +70,7 @@ export default function Contact() {
                         </address>
                     </Col>
                     <Col sm={12} md={6}>
-                        <Form onSubmit={submitForm} method="POST" name="contact" netlify>
+                        <Form onSubmit={submitForm} method="POST" name="contact" data-netlify="true">
                             <FormGroup>
                                 <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
                             </FormGroup> 
