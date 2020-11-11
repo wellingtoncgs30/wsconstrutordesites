@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import axios from "axios"
-import { Container, Row, Col, Form, FormGroup, Button, Modal } from "react-bootstrap"
+import React/*, { useState }*/ from "react"
+//import axios from "axios"
+import { Container, Row, Col, Form, FormGroup, Button/*, Modal*/ } from "react-bootstrap"
 import { FaPhoneAlt } from "react-icons/fa"
 import { ImWhatsapp } from "react-icons/im"
 import Input from "./input"
 
 export default function Contact() {
-    const [form, setForm] = useState({
+    /*const [form, setForm] = useState({
         name: "",
         telephone: "",
         email: "",
@@ -25,7 +25,7 @@ export default function Contact() {
         const {name, value} = event.target
         setForm(values => ({...values, [name]: value}))
     }
-    /*async function submitForm(event) {
+    async function submitForm(event) {
         const url = "http://localhost:3000/contact"
         const { name, telephone, email, subject, message } = form
         event.preventDefault()
@@ -41,7 +41,7 @@ export default function Contact() {
         }).catch((error) => {
             console.log(`Erro: ${error}`)
         })
-    }*/
+    }
     function resetForm() {
         setForm({
             name: "",
@@ -50,7 +50,7 @@ export default function Contact() {
             subject: "",
             message: ""
         })
-    }
+    }*/
     return(
         <section id="#contact">
             <h1 className="text-center">Entre em contato</h1>
@@ -70,25 +70,25 @@ export default function Contact() {
                         </address>
                     </Col>
                     <Col sm={12} md={6}>
-                        <Form method="POST" name="contact" data-netlify="true">
+                        <Form /*{onSubmit={submitForm}}*/ method="POST" name="contact" data-netlify="true">
                             <FormGroup>
-                                <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
+                                <Form.Control name="name" placeholder="Nome:" /*value={form.name} onChange={handleInputChange}*/ required></Form.Control>
                             </FormGroup> 
                             <FormGroup>
                                 <Input></Input>
                             </FormGroup>                   
                             <FormGroup>
-                                <Form.Control name="email" placeholder="E-mail:" value={form.email} onChange={handleInputChange} required></Form.Control>
+                                <Form.Control name="email" placeholder="E-mail:" /*value={form.email} onChange={handleInputChange}*/ required></Form.Control>
                             </FormGroup>
                             <FormGroup>
-                                <Form.Control name="subject" placeholder="Assunto:" value={form.subject} onChange={handleInputChange} required></Form.Control>
+                                <Form.Control name="subject" placeholder="Assunto:" /*value={form.subject} onChange={handleInputChange}*/ required></Form.Control>
                             </FormGroup>
                             <FormGroup>
-                                <Form.Control as="textarea" name="message" placeholder="Mensagem:" value={form.message} onChange={handleInputChange} required></Form.Control>
+                                <Form.Control as="textarea" name="message" placeholder="Mensagem:" /*value={form.message} onChange={handleInputChange}*/ required></Form.Control>
                             </FormGroup>
                             <FormGroup className="text-center">
                                 <Button variant="outline-success" type="submit">Enviar</Button>
-                                <Modal show={show} onHide={closeModal} backdrop="static" keyboard={false} centered>
+                                {/*<Modal show={show} onHide={closeModal} backdrop="static" keyboard={false} centered>
                                     <Modal.Header closeButton>
                                         <Modal.Title>Informação</Modal.Title>
                                     </Modal.Header>
@@ -98,8 +98,8 @@ export default function Contact() {
                                     <Modal.Footer>
                                         <Button variant="secondary" onClick={closeModal}>Ok</Button>
                                     </Modal.Footer>
-                                </Modal>
-                                <Button className="ml-2" variant="outline-secondary" type="reset" onClick={resetForm}>Limpar</Button>
+                                </Modal>*/}
+                                <Button className="ml-2" variant="outline-secondary" type="reset" /*onClick={resetForm}*/>Limpar</Button>
                             </FormGroup>
                         </Form>
                     </Col>
