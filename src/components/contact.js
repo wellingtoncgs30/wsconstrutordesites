@@ -25,7 +25,7 @@ export default function Contact() {
         const {name, value} = event.target
         setForm(values => ({...values, [name]: value}))
     }
-    async function submitForm(event) {
+    /*async function submitForm(event) {
         const url = "http://localhost:3000/contact"
         const { name, telephone, email, subject, message } = form
         event.preventDefault()
@@ -41,7 +41,7 @@ export default function Contact() {
         }).catch((error) => {
             console.log(`Erro: ${error}`)
         })
-    }
+    }*/
     function resetForm() {
         setForm({
             name: "",
@@ -70,7 +70,7 @@ export default function Contact() {
                         </address>
                     </Col>
                     <Col sm={12} md={6}>
-                        <Form onSubmit={submitForm} method="POST" name="contact" data-netlify="true">
+                        <Form method="POST" name="contact" data-netlify="true">
                             <FormGroup>
                                 <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
                             </FormGroup> 
