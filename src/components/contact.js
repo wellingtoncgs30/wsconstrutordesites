@@ -4,7 +4,6 @@ import { navigate } from "gatsby"
 import { Container, Row, Col, Form, FormGroup, Button, Modal } from "react-bootstrap"
 import { FaPhoneAlt } from "react-icons/fa"
 import { ImWhatsapp } from "react-icons/im"
-import Input from "./input"
 
 export default function Contact() {
     /*
@@ -128,10 +127,7 @@ export default function Contact() {
                             <input type="hidden" name="form-name" value="contact"></input>
                             <FormGroup>
                                 <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
-                            </FormGroup> 
-                            <FormGroup>
-                                <Input></Input>
-                            </FormGroup>                   
+                            </FormGroup>                    
                             <FormGroup>
                                 <Form.Control name="email" placeholder="E-mail:" value={form.email} onChange={handleInputChange} required></Form.Control>
                             </FormGroup>
