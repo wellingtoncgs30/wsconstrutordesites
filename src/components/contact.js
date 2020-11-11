@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 //import axios from "axios"
 import { navigate } from "gatsby"
-import { Container, Row, Col, Form, FormGroup, Button/*, Modal*/ } from "react-bootstrap"
+import { Container, Row, Col, Form, FormGroup, Button, Modal } from "react-bootstrap"
 import { FaPhoneAlt } from "react-icons/fa"
 import { ImWhatsapp } from "react-icons/im"
 import Input from "./input"
@@ -62,6 +62,14 @@ export default function Contact() {
         subject: "",
         message: ""
     })
+    const [show, setShow] = useState(false)
+    function openModal() {
+        setShow(true)
+    }
+    function closeModal() {
+        setShow(false)
+        resetForm()
+    }
     function handleInputChange(event) {
         const {name, value} = event.target
         setForm(values => ({...values, [name]: value}))
@@ -82,8 +90,20 @@ export default function Contact() {
                 ...form
             })
         })
-        .then(() => navigate(formContact.getAttribute("action")))
+        .then(() => 
+            navigate(formContact.getAttribute("action"),
+            openModal()
+        ))
         .catch((error) => console.log(`Erro: ${error}`))
+    }
+    function resetForm() {
+        setForm({
+            name: "",
+            telephone: "",
+            email: "",
+            subject: "",
+            message: ""
+        })
     }
     return(
         <section id="#contact">
@@ -110,7 +130,7 @@ export default function Contact() {
                                 <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
                             </FormGroup> 
                             <FormGroup>
-                                <Input name="telephone"></Input>
+                                <Input></Input>
                             </FormGroup>                   
                             <FormGroup>
                                 <Form.Control name="email" placeholder="E-mail:" value={form.email} onChange={handleInputChange} required></Form.Control>
@@ -123,7 +143,7 @@ export default function Contact() {
                             </FormGroup>
                             <FormGroup className="text-center">
                                 <Button variant="outline-success" type="submit">Enviar</Button>
-                                {/*<Modal show={show} onHide={closeModal} backdrop="static" keyboard={false} centered>
+                                <Modal show={show} onHide={closeModal} backdrop="static" keyboard={false} centered>
                                     <Modal.Header closeButton>
                                         <Modal.Title>Informação</Modal.Title>
                                     </Modal.Header>
@@ -133,7 +153,7 @@ export default function Contact() {
                                     <Modal.Footer>
                                         <Button variant="secondary" onClick={closeModal}>Ok</Button>
                                     </Modal.Footer>
-                                </Modal>*/}
+                                </Modal>
                                 <Button className="ml-2" variant="outline-secondary" type="reset" /*onClick={resetForm}*/>Limpar</Button>
                             </FormGroup>
                         </Form>
