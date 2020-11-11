@@ -104,7 +104,7 @@ export default function Contact() {
                         </address>
                     </Col>
                     <Col sm={12} md={6}>
-                        <Form onSubmit={submitForm} method="POST" name="contact" data-netlify="true">
+                        <Form onSubmit={submitForm} method="POST" name="contact" data-netlify="true" data-netlify-honeypot="bot-field">
                             <input type="hidden" name="form-name" value="contact"></input>
                             <FormGroup>
                                 <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
