@@ -1,35 +1,37 @@
-import { Link } from "gatsby"
+import { Navbar, Nav, Container } from "react-bootstrap"
+import { FaBars } from "react-icons/fa"
 import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/logo-WS.png"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+export default function Header({ siteTitle }) {
+  return(
+    <header className="header">
+      {siteTitle}
+      <Container>
+        <Navbar>
+          <Navbar.Brand>
+            <img src={logo} alt="Logotipo da WS - Construtor de sites" id="logo"></img>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="menu">
+            <FaBars style={{color: "white", fontSize: "40px"}}></FaBars>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="menu">
+            <Nav className="ml-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#about">Sobre</Nav.Link>
+              <Nav.Link href="#services">Serviços</Nav.Link>
+              <Nav.Link href="#depositions">Depoimentos</Nav.Link>
+              <Nav.Link href="#portfolio">Portfólio</Nav.Link>
+              <Nav.Link href="#blog">Blog</Nav.Link>
+              <Nav.Link href="#contact">Contato</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    </header>
+  )
+} 
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
@@ -38,5 +40,3 @@ Header.propTypes = {
 Header.defaultProps = {
   siteTitle: ``,
 }
-
-export default Header
