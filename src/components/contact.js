@@ -110,7 +110,7 @@ export default function Contact() {
                                 <Form.Control name="name" placeholder="Nome:" value={form.name} onChange={handleInputChange} required></Form.Control>
                             </FormGroup> 
                             <FormGroup>
-                                <Input></Input>
+                                <Input name="telephone"></Input>
                             </FormGroup>                   
                             <FormGroup>
                                 <Form.Control name="email" placeholder="E-mail:" value={form.email} onChange={handleInputChange} required></Form.Control>
