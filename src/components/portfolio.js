@@ -45,7 +45,7 @@ export default function Portfolio() {
                         <div className="text-justify">
                             <p>A Divi Lover é um site de caráter fictício baseado em uma empresa norte-americana.</p>
                             <Button variant="outline-info" block onClick={openModalThree}>Clique aqui para saber mais</Button>
-                            <Modal show={showModalThree} onHide={closeModal} backdrop="static" keyboard={false}>
+                            <Modal show={showModalThree} onHide={closeModalThree} backdrop="static" keyboard={false}>
                                 <Modal.Header closeButton className="text-center">Informação</Modal.Header>
                                 <Modal.Body>
                                     <div className="text-justify">
@@ -72,7 +72,7 @@ export default function Portfolio() {
                         <div className="text-justify">
                             <p>A Aurora Fashion é uma loja virtual que vende pela Internet roupas femininas.</p>
                             <Button variant="outline-info" block onClick={openModalTwo}>Clique aqui para saber mais</Button>
-                            <Modal show={showModalTwo} onHide={closeModal} backdrop="static" keyboard={false}>
+                            <Modal show={showModalTwo} onHide={closeModalTwo} backdrop="static" keyboard={false}>
                                 <Modal.Header closeButton className="text-center">Informação</Modal.Header>
                                 <Modal.Body>
                                     <div className="text-justify">
