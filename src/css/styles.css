@@ -110,7 +110,9 @@ textarea {
     resize: none!important;
 }
 
-img#devices, img#blog, img#e-commerce, img#portal {
+img#devices, img#blog, img#e-commerce, img#portal,
+img#logo-pestalozzi, img#logo-aurora-fashion,
+img#logo-divi-lover {
     width: 100%;
 }
 
