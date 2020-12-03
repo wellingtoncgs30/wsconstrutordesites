@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Container, Row, Col, Modal, Button } from "react-bootstrap"
 import logoPestalozzi from "../images/logo-pestalozzi.jpg"
-import logoAuroraFashion from "../images/aurora-fashion.png"
+import logoAuroraFashion from "../images/aurora-Fashion.png"
 import logoDiviLover from "../images/some_logo_dark.png"
 import { Link } from "gatsby"
 
