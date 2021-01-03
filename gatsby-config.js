@@ -20,6 +20,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         /*icon: `src/images/gatsby-icon.png`,*/ //vou utilizar depois
+        icon: `src/images/logo-WS.png`
       },
     },
     `gatsby-plugin-netlify-cms`,
