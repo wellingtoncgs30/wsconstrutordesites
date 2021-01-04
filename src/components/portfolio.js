@@ -34,13 +34,12 @@ export default function Portfolio() {
         <section id="portfolio">
             <Container>
                 <h1 className="text-center">Últimos trabalhos</h1>
-                <h2 className="text-center">Parte em construção!</h2>
                 <Row>   
-                    <Col sm={12} md={3}>
+                    {/* <Col sm={12} md={3}>
                         <img src={logoPestalozzi} alt="Logotipo da Associação Pestalozzi Campinas" id="logo-pestalozzi"></img>
 
-                    </Col>
-                    <Col sm={12} md={3}>
+                    </Col> */}
+                    <Col sm={12} md={4}>
                         <img src={logoDiviLover} alt="Logotipo da Divi Lover" id="logo-divi-lover"></img>
                         <div className="text-justify">
                             <p>A Divi Lover é um site de caráter fictício baseado em uma empresa norte-americana.</p>
@@ -67,7 +66,7 @@ export default function Portfolio() {
                             </Modal>
                         </div>
                     </Col>
-                    <Col sm={12} md={3}>
+                    <Col sm={12} md={4}>
                         <img src={logoAuroraFashion} alt="Logotipo da Aurora Fashion - Loja virtual de roupas femininas" id="logo-aurora-fashion"></img>
                         <div className="text-justify">
                             <p>A Aurora Fashion é uma loja virtual que vende pela Internet roupas femininas.</p>
@@ -94,7 +93,7 @@ export default function Portfolio() {
                             </Modal>
                         </div>
                     </Col>
-                    <Col sm={12} md={3}>
+                    <Col sm={12} md={4}>
                         <img src={logoPestalozzi} alt="Logotipo da Associação Pestalozzi Campinas" id="logo-pestalozzi"></img>
                         <div className="text-justify">
                             <p>A Associação Pestalozzi de Campinas é uma instituição que cuida de pessoas com autismo e que realiza um grande trabalho.</p>

@@ -3,8 +3,8 @@ backend:
   branch: master
   repo: wellingtoncgs30/wsconstrutordesites
 
-media_folder: static/images
-public_folder: /images
+media_folder: static/media
+public_folder: /media
 publish_mode: editorial_workflow
 collections:
   - name: blog
@@ -17,6 +17,7 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
+      - { label: Image, name: image, widget: image}
       - { name: date, label: Publish Date, widget: datetime }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
