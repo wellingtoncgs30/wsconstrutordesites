@@ -15,6 +15,7 @@ collections:
     editor:
       preview: true
     fields:
+      - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: date, label: Publish Date, widget: datetime }
       - { name: description, label: Description }
