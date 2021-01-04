@@ -4,8 +4,6 @@ title: Tipos de sites
 date: 2021-01-04T00:04:27.927Z
 description: "Tipos de sites "
 ---
-![Imagem do post](/images/dispositivos.jpg "Sites em diferentes dispositivos")
-
 Você profissional liberal ou empresa que quer ter um site, mas não sabe quais os tipos de sites existentes na Internet? Essa notícia vai tirar todas as suas dúvidas em relação a esse assunto.
 
 Existem quatro tipos de sites na Internet que são:
