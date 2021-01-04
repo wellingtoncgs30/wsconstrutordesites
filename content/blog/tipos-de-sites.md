@@ -1,6 +1,7 @@
 ---
 path: tipos-de-sites.md
 title: Tipos de sites
+image: /media/dispositivos.jpg
 date: 2021-01-04T00:04:27.927Z
 description: "Tipos de sites "
 ---
