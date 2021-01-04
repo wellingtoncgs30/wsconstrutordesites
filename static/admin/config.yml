@@ -17,7 +17,7 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
-      - { label: Image, name: image, widget: image}
+      - { name: image, widget: image}
       - { name: date, label: Publish Date, widget: datetime }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
