@@ -146,6 +146,14 @@ div.signature {
     text-align: center;
 }
 
+img#image-post {
+    width: 100%;
+}
+
+section#content {
+    white-space: pre-line;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     #menu {

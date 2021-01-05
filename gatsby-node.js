@@ -5,3 +5,43 @@
  */
 
 // You can delete this file if you're not using it
+const path = require("path")
+exports.createPages = ({ graphql, actions: { createPage }}) => {
+    return new Promise((resolve, reject) => {
+        graphql(`
+        query MyQuery {
+          allMarkdownRemark {
+            edges {
+              node {
+                id
+                frontmatter {
+                  title
+                  date
+                  path {
+                    relativePath
+                    name
+                    publicURL
+                  }
+                  image
+                }
+                internal {
+                  content
+                }
+              }
+            }
+          }
+        }        
+        `).then(result => {
+            result.data.allMarkdownRemark.edges.map(({ node }) => {
+                createPage({
+                    path: node.frontmatter.path.name,
+                    component: path.resolve("./src/templates/blog.js"),
+                    context: {
+                        name: node.frontmatter.path.name
+                    }
+                })
+            })
+            resolve()
+        })
+    })
+}

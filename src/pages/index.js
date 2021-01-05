@@ -1,5 +1,4 @@
 import React from "react"
-//import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Home from "../components/home"
@@ -10,8 +9,8 @@ import Portfolio from "../components/portfolio"
 import Contact from "../components/contact"
 import Blog from "../components/blog"
 import Footer from "../components/footer"
-import { graphql } from "gatsby"
-import { Row, Col } from "react-bootstrap"
+import { graphql, Link } from "gatsby"
+import { Row, Col, Button } from "react-bootstrap"
 
 export default function Index({data}) {
   console.log(data)
@@ -30,7 +29,11 @@ export default function Index({data}) {
           {posts ? (
             posts.map((post) => (  
               <Col key={post.node.id} sm={12} md={3}>
-                <h1>{post.node.frontmatter.title}</h1>
+                <img src={post.node.frontmatter.image} alt="Imagem do post" title="Imagem em dispositivos diferentes" id="image-post"></img>
+                <p className="text-justify">{post.node.internal.content.slice(0, 57)}...</p>
+                <Button variant="link" className="btn btn-block">
+                  <Link to={post.node.frontmatter.path.name}>Leia mais</Link>
+                </Button>
               </Col>
             ))
           ) : ""}
@@ -44,22 +47,24 @@ export default function Index({data}) {
 
 export const pageQuery = graphql`
 query MyQuery {
-    allMarkdownRemark {
-      edges {
-        node {
-            id
-          frontmatter {
-            title
-            date
-            path {
-              relativePath
-            }
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date
+          path {
+            relativePath
+            name
           }
-          internal {
-            content
-          }
+          image
+        }
+        internal {
+          content
         }
       }
     }
   }
+}
 `
