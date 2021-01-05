@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import "../css/styles.css"
 import { graphql } from "gatsby"
 import { Container } from "react-bootstrap"
+import { Comments, FacebookProvider } from "react-facebook"
 
 export default function Blog({data}) {
     console.log(data)
@@ -17,6 +18,16 @@ export default function Blog({data}) {
                     <h1 className="text-center">{post.frontmatter.title}</h1>
                     <img src={post.frontmatter.image} id="image-post" alt="Imagem do post" title="Imagem em diferentes dispostivos"></img>
                     <p className="text-justify">{post.internal.content}</p>
+                    <h2 className="text-center">Deixe seu comentário</h2>
+                    <FacebookProvider appId="828577297915717">
+                      <Comments href="http://www.facebook.com">
+                        <div className="fb-comments text-center" 
+                        data-href="https://localhost:8000/templates/blog.js" 
+                        data-numposts="10" 
+                        width="1100" 
+                        data-order-by="reverse_time"></div>
+                      </Comments>
+                    </FacebookProvider>
                 </Container>
             </section>
             <Footer></Footer>

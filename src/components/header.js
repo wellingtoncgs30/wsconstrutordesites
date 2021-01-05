@@ -18,7 +18,7 @@ export default function Header({ siteTitle }) {
           </Navbar.Toggle>
           <Navbar.Collapse id="menu">
             <Nav className="ml-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="#about">Sobre</Nav.Link>
               <Nav.Link href="#services">Serviços</Nav.Link>
               <Nav.Link href="#depositions">Depoimentos</Nav.Link>
