@@ -8,7 +8,6 @@ import { Container } from "react-bootstrap"
 import { Comments, FacebookProvider } from "react-facebook"
 
 export default function Blog({data}) {
-    console.log(data)
     const post = data.allMarkdownRemark.edges[0].node
     return(
         <Layout>

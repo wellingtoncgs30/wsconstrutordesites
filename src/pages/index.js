@@ -13,7 +13,6 @@ import { graphql, Link } from "gatsby"
 import { Row, Col, Button } from "react-bootstrap"
 
 export default function Index({data}) {
-  console.log(data)
   const posts = data.allMarkdownRemark.edges
   return(
     <Layout>
