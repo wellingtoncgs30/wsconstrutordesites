@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { Container, Row, Col } from "react-bootstrap"
 import { AiOutlineCopyright } from "react-icons/ai"
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa"
@@ -8,6 +9,9 @@ import picPay from "../images/pic-pay.svg"
 export default function Footer() {
     const styles = {
         marginLeft: "3vh"
+    }
+    const listSocials = {
+        color: "white"
     }
     return(
         <footer className="footer">
@@ -26,10 +30,18 @@ export default function Footer() {
                     <Col md={4}>
                         <h1 className="text-center">Redes sociais</h1>
                         <div className="list-socials text-center">
-                            <FaFacebook></FaFacebook>
-                            <FaInstagram style={styles}></FaInstagram>
-                            <FaLinkedin style={styles}></FaLinkedin>
-                            <FaGithub style={styles}></FaGithub>
+                            <Link to="https://www.facebook.com/wsconstrutordesites" target="__blank" style={listSocials}>
+                                <FaFacebook></FaFacebook>
+                            </Link>
+                            <Link to="https://www.instagram.com/wsconstrutordesites/" target="__blank" style={listSocials}>
+                                <FaInstagram style={styles}></FaInstagram>
+                            </Link>
+                            <Link to="https://www.linkedin.com/in/wellington-cesar" target="__blank" style={listSocials}>
+                                <FaLinkedin style={styles}></FaLinkedin>
+                            </Link>
+                            <Link to="https://github.com/wellingtoncgs30" target="__blank" style={listSocials}>
+                                <FaGithub style={styles}></FaGithub>
+                            </Link>
                         </div>
                     </Col>
                 </Row>

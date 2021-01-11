@@ -16,7 +16,7 @@ export default function Index({data}) {
   const posts = data.allMarkdownRemark.edges
   return(
     <Layout>
-      <SEO title="Teste" />
+      <SEO title="Página Inicial" />
       <Home></Home>
       <About></About>
       <Services></Services>

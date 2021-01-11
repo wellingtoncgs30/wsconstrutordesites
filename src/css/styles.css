@@ -138,6 +138,11 @@ div.list-socials {
     font-size: 50px;
 }
 
+div.list-socials a:hover {
+    color: rgba(255, 255, 255, 0.6)!important;
+    transition: 8ms!important;
+}
+
 hr {
     background-color: white;
 }
@@ -198,6 +203,10 @@ section#content {
         position: absolute; 
         top: 50%; 
         color: blue;
+    }
+
+    div.list-socials {
+        font-size: 29px;
     }
 }
 

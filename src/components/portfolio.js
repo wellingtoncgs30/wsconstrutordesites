@@ -43,7 +43,7 @@ export default function Portfolio() {
                         <img src={logoDiviLover} alt="Logotipo da Divi Lover" id="logo-divi-lover"></img>
                         <div className="text-justify">
                             <p>A Divi Lover é um site de caráter fictício baseado em uma empresa norte-americana.</p>
-                            <Button variant="outline-info" block onClick={openModalThree}>Clique aqui para saber mais</Button>
+                            <Button variant="outline-info" block onClick={openModalThree} className="mb-3">Clique aqui para saber mais</Button>
                             <Modal show={showModalThree} onHide={closeModalThree} backdrop="static" keyboard={false}>
                                 <Modal.Header closeButton className="text-center">Informação</Modal.Header>
                                 <Modal.Body>
@@ -70,7 +70,7 @@ export default function Portfolio() {
                         <img src={logoAuroraFashion} alt="Logotipo da Aurora Fashion - Loja virtual de roupas femininas" id="logo-aurora-fashion"></img>
                         <div className="text-justify">
                             <p>A Aurora Fashion é uma loja virtual que vende pela Internet roupas femininas.</p>
-                            <Button variant="outline-info" block onClick={openModalTwo}>Clique aqui para saber mais</Button>
+                            <Button variant="outline-info" block onClick={openModalTwo} className="mb-3">Clique aqui para saber mais</Button>
                             <Modal show={showModalTwo} onHide={closeModalTwo} backdrop="static" keyboard={false}>
                                 <Modal.Header closeButton className="text-center">Informação</Modal.Header>
                                 <Modal.Body>
@@ -97,7 +97,7 @@ export default function Portfolio() {
                         <img src={logoPestalozzi} alt="Logotipo da Associação Pestalozzi Campinas" id="logo-pestalozzi"></img>
                         <div className="text-justify">
                             <p>A Associação Pestalozzi de Campinas é uma instituição que cuida de pessoas com autismo e que realiza um grande trabalho.</p>
-                            <Button variant="outline-info" block onClick={showModal}>Clique aqui para saber mais</Button>
+                            <Button variant="outline-info" block onClick={showModal} className="mb-2">Clique aqui para saber mais</Button>
                             <Modal show={show} onHide={closeModal} backdrop="static" keyboard={false}>
                                 <Modal.Header closeButton className="text-center">Informação</Modal.Header>
                                 <Modal.Body>
