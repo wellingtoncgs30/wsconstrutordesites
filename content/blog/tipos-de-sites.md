@@ -7,7 +7,7 @@ description: "Tipos de sites "
 ---
 Você profissional liberal ou empresa que quer ter um site, mas não sabe quais os tipos de sites existentes na Internet? Esse post vai tirar todas as suas dúvidas em relação a esse assunto.
 
-Existem cinco tipos de sites na Internet que são:
+Existem cinco tipos de sites na Internet:
 
 1. Site institucional: Tipo de site ideal para profissionais liberais e empresas que não possuem produtos para vender e desejam ter um site para mostrar os serviços oferecidos com o objetivo de realizar a captação de novos negócios e novos clientes, exibir as atividades realizadas aos seus colaboradores e a sua transparência em relação a comunidade em que atua.
 2. Loja virtual: Site que tem como finalidade vender produtos e/ou serviços, ideal para pequenos comércios, lojas e empresas que vendem produtos diversos e que precisam da Internet para aumentar o faturamento e participação na rede mundial de computadores.
