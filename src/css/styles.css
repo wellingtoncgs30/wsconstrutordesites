@@ -10,7 +10,7 @@ body {
 }
 
 header.header {
-    background-color: #01096c;
+    background-color: rgb(90, 107, 163);
 }
 
 #menu {
@@ -19,7 +19,7 @@ header.header {
 }
 
 #logo {
-    height: 6vh;
+    height: 13vh;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -36,7 +36,7 @@ header.header {
 }
 
 .navbar-toggler:active {
-    background-color: #010960;
+    background-color: rgb(90, 107, 163);
 }
 img#banner {
     opacity: 0.5;
@@ -99,11 +99,11 @@ section#contact {
 }
 
 input::placeholder, textarea::placeholder {
-    color: #01096c!important;
+    color: rgb(90, 107, 163)!important;
 }
 
 .form-control {
-    border: 1px solid #01096c!important;
+    border: 1px solid rgb(90, 107, 163)!important;
 }
 
 textarea {
@@ -117,7 +117,7 @@ img#logo-divi-lover {
 }
 
 footer.footer {
-    background-color: #010641;
+    background-color: rgb(35, 44, 77);
     color: white;
 }
 
@@ -183,8 +183,7 @@ section#content {
     }
 
     #logo {
-        width: 13vh;
-        height: 9vh;
+        height: 23vh;
     }
     
     img#banner {

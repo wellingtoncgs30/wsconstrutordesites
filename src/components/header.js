@@ -2,7 +2,7 @@ import { Navbar, Nav, Container } from "react-bootstrap"
 import { FaBars } from "react-icons/fa"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/logo-WS.png"
+import logo from "../images/logo-novo-WS.png"
 
 export default function Header({ siteTitle }) {
   return(

@@ -52,7 +52,7 @@ export default function Footer() {
                             <p><AiOutlineCopyright></AiOutlineCopyright> Todos os direitos reservados</p>
                         </Col>
                         <Col sm={12} md={6}>
-                            <p>Site desenvolvido por WS - Construtor de sites</p>
+                            <p>Site desenvolvido por WS - Desenvolvedor Web</p>
                         </Col>
                     </Row>
                 </div>
