@@ -1,5 +1,5 @@
 ---
-path: desvantagens-ao-não-ter-um-site-3.md
+path: desvantagens-ao-não-ter-um-site-1.md
 title: Desvantagens ao não ter um site
 image: /media/pexels-pixabay-356056.jpg
 date: 2021-01-23T16:30:17.286Z
