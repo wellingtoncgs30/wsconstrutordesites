@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `WS - Construtor de sites`,
+    title: `WS - Desenvolvedor Web`,
     description: `Site para divulgação de portfólio de trabalhos de sites realizados para contratação por parte de potenciais futuros clientes.`,
     author: `@wellingtoncgs30`,
   },

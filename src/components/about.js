@@ -6,7 +6,7 @@ export default function About() {
         <section id="about" className="text-justify">
             <Container>
                 <h1 className="text-center">Sobre a WS - Construtor de sites</h1>
-                <p>A WS – Construtor de sites surgiu em setembro de 2020. Seu fundador Wellington César que é uma pessoa apaixonada por tecnologia, inovação e desenvolvimento de sites e que ao perceber como usuário, sites que entregavam pouca experiência de uso ao usuário, lentidão no carregamento das páginas e pouco resultado para algumas empresas na divulgação de seus produtos e serviços.</p>
+                <p>A WS surgiu em setembro de 2020. Seu fundador Wellington César que é uma pessoa apaixonada por tecnologia, inovação e desenvolvimento de sites e que ao perceber como usuário, sites que entregavam pouca experiência de uso ao usuário, lentidão no carregamento das páginas e pouco resultado para algumas empresas na divulgação de seus produtos e serviços.</p>
                 <p>Assim surgiu uma oportunidade de oferecer aos clientes sites, lojas virtuais, blogs e sites de notícias com alto desempenho nas hospedagens existentes a preços competitivos e justos.</p>
                 <p>A prestação de serviços ocorre no levantamento das necessidades dos clientes que querem além de ter um site, que é o endereço virtual próprio, ter uma excelente performance com preço justo e resultados. Para alcançar esses resultados realizamos o trabalho de SEO para que seu site sempre esteja bem posicionado em pesquisas do Google.</p>
                 <h2 className="text-center">Missão</h2>
