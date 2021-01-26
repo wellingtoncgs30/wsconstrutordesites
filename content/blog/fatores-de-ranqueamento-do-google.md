@@ -8,7 +8,7 @@ description: Saiba quais são os fatores que o Google leva em consideração ao
 ---
 No post anterior sobre SEO, foi mencionado que o Google define a priorização e relevância dos resultados para ranquear uma página.
 
-A seguir é apresentado uma lista de 10 principais fatores de ranqueamento de uma página:
+A seguir é apresentado uma lista de 10 principais fatores de ranqueamento de uma página, para saber quais são os 200 fatores de ranqueamento de uma página nos motores de busca, acesse o link https://backlinko.com/google-ranking-factors:
 
 1. Page authority ou pagerank: A autoridade da página leva em consideração os seguintes fatores: escolha do melhor nome do domínio, extensão do nome desse domínio (.org, .br, .com.br, por exemplo), SEO bem trabalhado dentro dos seus conteúdos,  ter conteúdo relacionado ao seu nicho de atuação, estratégias de link building para aumentar o número e a qualidade dos links de entrada para um site e, se a mesma tem uma melhor presença nas suas redes sociais.
 
