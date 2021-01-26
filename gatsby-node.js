@@ -13,19 +13,12 @@ exports.createPages = ({ graphql, actions: { createPage }}) => {
           allMarkdownRemark {
             edges {
               node {
-                id
                 frontmatter {
-                  title
-                  date
                   path {
                     relativePath
                     name
                     publicURL
                   }
-                  image
-                }
-                internal {
-                  content
                 }
               }
             }
