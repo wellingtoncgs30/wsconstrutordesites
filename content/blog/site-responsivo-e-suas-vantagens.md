@@ -53,7 +53,7 @@ Ter um site responsivo colabora para que seu site apareça nos resultados de bus
 
 Uma das recomendações do Google PageSpeed Developers é que o conteúdo da parte de cima da dobra no dispositivo móvel seja carregado em menos de 1 segundo. E o carregamento completo de uma página seja em menos de 2 segundos.
 
-Na maioria das vezes, isso é impossível quando uma versão desktop de um site é carregado em um dispositivo móvel. A velocidade de carregamento, que é um fator que o Google leva em consideração para ranquear uma página, fica comprometida, prejudicando a experiência do usuário. Caso o site demore para carregar, a probabilidade do cliente fechar a janela e ir procurar o conteúdo que precisa em outro lugar.
+Na maioria das vezes, isso é impossível quando uma versão desktop de um site é carregado em um dispositivo móvel. A velocidade de carregamento, que é um fator que o Google leva em consideração para ranquear uma página, fica comprometida, prejudicando a experiência do usuário. Caso o site demore para carregar, a probabilidade do cliente fechar a janela e ir procurar o conteúdo que precisa em outro lugar é muito grande.
 
 O site responsivo é mais leve e otimizado para os dispositivos móveis, por isso é carregado mais rápido naturalmente do que uma versão desktop.
 
