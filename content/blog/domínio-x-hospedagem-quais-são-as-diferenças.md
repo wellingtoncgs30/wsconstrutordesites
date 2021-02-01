@@ -19,7 +19,7 @@ O nome do domínio é como se fosse o RG de um site, no qual é único e identif
 
 ## Hospedagem
 
-Uma hospedagem é o servidor que vai estar ocupado os arquivos do seu site para que o mesmo esteja no ar. É como se fosse um terreno para abrigar a construção de uma casa.
+Uma hospedagem é o servidor que vai abrigar os arquivos do seu site para que o mesmo esteja no ar. É como se fosse um terreno para abrigar a construção de uma casa.
 
 No mercado existem várias empresas que trabalham com hospedagens de sites: Hostgator, Hostinger, Locaweb, GoDaddy, Hostmidia, Terra e outros provedores.
 
