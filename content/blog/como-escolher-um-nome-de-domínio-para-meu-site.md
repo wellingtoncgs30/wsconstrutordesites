@@ -37,7 +37,7 @@ Há milhares de domínios registrados, portanto é importante ter um domínio me
 
 ## 7. Evite problemas jurídicos
 
-Verifique antes de utilizar o nome de domínio que você quer usar se o mesmo já foi registrado ou é uma marca registrada.
+Verifique, antes de utilizar o nome de domínio que você quer usar, se o mesmo já foi registrado ou é uma marca registrada.
 
 ## 8. Utilizar uma extensão de domínio apropriada
 
