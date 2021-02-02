@@ -1,7 +1,7 @@
 ---
 path: como-escolher-um-nome-de-domínio-para-meu-site.md
 title: Como escolher um nome de domínio para meu site?
-image: /media/domain-3655918_1280.png
+image: /media/lightbulb-1875247_1280.jpg
 date: 2021-02-02T14:34:55.057Z
 description: Saiba como escolher um nome perfeito para colocar no domínio do seu site
 ---
